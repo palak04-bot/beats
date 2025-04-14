@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="" class="logo"><i class="fa-solid fa-headphones-simple"></i>Beats</a>
+        <ul class="navbar">
+            <li><a href="" class="overv">Overview</a></li>
+            <li><a href="">Tech Specs</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <div class="header-icons">
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </header>
+    <!-- home -->
+     <section class="home">
+        <div class="home-img">
+            <img src="headphone1.png" class="one" height="430px" alt="">
+        </div>
+        <div class="home-text">
+            <h1>Wireless <br>Headphones</h1>
+            <h5>The smarter way to listen.</h5>
+            <h3>$189.90</h3>
+            <a href="" class="btn">Shop Now</a>
+        </div>
+     </section>
+     <div class="main">
+        <div class="row">
+            <li>
+                <img src="headphone1.png" height="60px" onclick="slider('headphone1.png')" alt="">
+            </li>
+        </div>
+        <div class="row row2">
+            <li>
+                <img src="headphone2.png" height="60px" onclick="slider('headphone2.png')" alt="">
+            </li>
+        </div>
+        <div class="row row3">
+            <li>
+                <img src="headphone3.png" height="60px" onclick="slider('headphone3.png')" alt="">
+            </li>
+        </div>
+     </div>
+     <a href="" class="bottom">Scroll Down<i class="fa-regular fa-circle-down"></i></a>
+
+
+
+     <script>
+        function slider(anything) {
+            document.querySelector('.one').src = anything;
+        };
+
+        let menu = document.querySelector('#menu-icon')
+        let navbar = document.querySelector('.navbar')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-solid')
+            navbar.classList.toggle('.open')
+        }
+     </script>
+</body>
+
+</html>
